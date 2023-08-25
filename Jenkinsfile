@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER_IMAGE_VERSION = "1.1.${BUILD_ID}"
-        DOCKER_IMAGE_NAME = "eswaramoorthi/user"
+        DOCKER_IMAGE_NAME = "eswaramoorthi/admin"
     }
     options {
   buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5')
