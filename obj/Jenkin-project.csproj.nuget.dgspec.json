@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project\\Jenkin-project.csproj": {}
+    "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project.csproj": {}
   },
   "projects": {
-    "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project\\Jenkin-project.csproj": {
+    "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project\\Jenkin-project.csproj",
+        "projectUniqueName": "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project.csproj",
         "projectName": "Jenkin-project",
-        "projectPath": "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project\\Jenkin-project.csproj",
+        "projectPath": "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project.csproj",
         "packagesPath": "C:\\Users\\eswar\\.nuget\\packages\\",
-        "outputPath": "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\Jenkin-project\\obj\\",
+        "outputPath": "D:\\Eswaramoorthi.K\\PI_REWAMP-AUDITOR\\Jenkin-project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eswar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,32 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "App.Metrics.AspNetCore": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.AspNetCore.Endpoints": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.AspNetCore.Tracking": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.Formatters.Prometheus": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Sentry.AspNetCore": {
+              "target": "Package",
+              "version": "[3.36.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
