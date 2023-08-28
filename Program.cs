@@ -13,7 +13,7 @@ namespace Jenkins_build
 
             using (SentrySdk.Init(options =>
             {
-                options.Dsn = "https://9eb6b1fc6123e07a2875df4c80f82f05@o4505747039846400.ingest.sentry.io/4505747044368384";
+                options.Dsn = "https://41603225295d852757be546d0ab7d586@o4505780885585920.ingest.sentry.io/4505781285814272";
                 options.Debug = true;
 
                 options.AutoSessionTracking = true;
