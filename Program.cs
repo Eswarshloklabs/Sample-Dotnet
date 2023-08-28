@@ -9,8 +9,6 @@ namespace Jenkin_project
     {
         public static void Main(string[] args)
         {
-
-
             using (SentrySdk.Init(options =>
             {
                 options.Dsn = "https://4d6ab91677563229e81328621e49c3b3@o4505780885585920.ingest.sentry.io/4505781358166016"; options.Debug = true;
