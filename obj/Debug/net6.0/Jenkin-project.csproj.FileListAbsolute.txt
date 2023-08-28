@@ -56,3 +56,4 @@ D:\Eswaramoorthi.K\PI_REWAMP-AUDITOR\Jenkin-project\obj\Debug\net6.0\refint\Jenk
 D:\Eswaramoorthi.K\PI_REWAMP-AUDITOR\Jenkin-project\obj\Debug\net6.0\Jenkin-project.pdb
 D:\Eswaramoorthi.K\PI_REWAMP-AUDITOR\Jenkin-project\obj\Debug\net6.0\Jenkin-project.genruntimeconfig.cache
 D:\Eswaramoorthi.K\PI_REWAMP-AUDITOR\Jenkin-project\obj\Debug\net6.0\ref\Jenkin-project.dll
+D:\Eswaramoorthi.K\PI_REWAMP-AUDITOR\Jenkin-project\bin\Debug\net6.0\Newtonsoft.Json.dll
