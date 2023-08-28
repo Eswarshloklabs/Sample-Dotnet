@@ -3,7 +3,7 @@ using App.Metrics.Formatters.Prometheus;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Sentry;
 
-namespace Jenkins_build
+namespace Jenkin_project
 {
     public class Program
     {
@@ -13,8 +13,7 @@ namespace Jenkins_build
 
             using (SentrySdk.Init(options =>
             {
-                options.Dsn = "https://41603225295d852757be546d0ab7d586@o4505780885585920.ingest.sentry.io/4505781285814272";
-                options.Debug = true;
+                options.Dsn = "https://4d6ab91677563229e81328621e49c3b3@o4505780885585920.ingest.sentry.io/4505781358166016"; options.Debug = true;
 
                 options.AutoSessionTracking = true;
 
