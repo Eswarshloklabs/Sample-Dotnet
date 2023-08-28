@@ -70,7 +70,7 @@ namespace Jenkin_project
                 {
                     app.Run(async context =>
                     {
-                        throw new Exception("This is a deliberate exception for testing Sentry.");
+                        throw new Exception("Just throw an error to check sentry.");
                     });
                 });
 
