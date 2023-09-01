@@ -1,17 +1,21 @@
+#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0 as build-env
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["Jenkin-project.csproj", "."]
-RUN dotnet restore
+RUN dotnet restore "./Jenkin-project.csproj"
 COPY . .
-RUN dotnet publish "Jenkin-project.csproj" -c Release -o /publish
+WORKDIR "/src/."
+RUN dotnet build "Jenkin-project.csproj" -c Release -o /app/build
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
-WORKDIR /publish
-COPY --from=build-env /publish .
-EXPOSE 80
+FROM build AS publish
+RUN dotnet publish "Jenkin-project.csproj" -c Release -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "Jenkin-project.dll"]
